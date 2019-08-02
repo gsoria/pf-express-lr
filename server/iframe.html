@@ -6,9 +6,8 @@
 </head>
 <body>
   <script>
-      var url = location.host;
-      url = url.replace('3000', '35729');
-      document.write('<script src="https://' + url + '/livereload.js?snipver=1&port=443"></' + 'script>')
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+    ':35729/livereload.js?snipver=1"></' + 'script>')
   </script>
   ${partial}
 </body>
