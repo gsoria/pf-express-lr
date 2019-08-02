@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://unpkg.com/@patternfly/patternfly/patternfly.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <script>
+      var url = location.host;
+      url = url.replace('3000', '35729');
+      document.write('<script src="https://' + url + '/livereload.js?snipver=1&port=443"></' + 'script>')
+  </script>
+  ${partial}
+</body>
+</html>
